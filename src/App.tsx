@@ -35,7 +35,9 @@ function App() {
         </div>
       </div>
       <h1 className="text-center pt-10 md:pt-20 text-xl">
+        <a href="https://www.linkedin.com/in/matias-semelman/" target="_blank" rel="noopener noreferrer">
         {t("by")} Matias Semelman
+        </a>
       </h1>
     </div>
   );

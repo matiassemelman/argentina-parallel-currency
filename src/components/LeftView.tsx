@@ -23,8 +23,12 @@ export const LeftView: React.FC<Props> = ({ setAmount, amount }) => {
       <div className="py-2 flex bg-slate-200 text-inputText rounded-3xl px-2 font-bold">
         <span className="pl-4">$</span>
         <input
-          type="text"
+          type="number"
+          id="pesosInput"
+          min={0}
+          max={99999999}
           name="pesosInput"
+          autoFocus
           placeholder="0"
           value={amount}
           className="text-end bg-slate-200 pr-4"
