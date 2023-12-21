@@ -3,11 +3,17 @@ import "./App.css";
 import { LeftView, RightView } from "./components";
 import { getCurrencyValues } from "./api/currencyService";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { LanguageSelector } from "./components/LanguageSelector";
 
 function App() {
   const [amount, setAmount] = useState(0);
   const [values, setValues] = useState({});
   const { t } = useTranslation();
+
+  const changeLanguage = (language: string) => {
+    i18next.changeLanguage(language);
+  };
 
   useEffect(() => {
     const fetchValues = async () => {
@@ -17,8 +23,11 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <h2 className="text-center py-20 text-2xl">{t("title1")}</h2>
+    <div className="min-h-screen text-center">
+      <div className="py-16">
+        <h2 className="text-center text-2xl">{t("title1")}</h2>
+        <LanguageSelector changeLanguage={changeLanguage} />
+      </div>
       <div className=" flex justify-center items-center">
         <div className="bg-white md:flex rounded-t-xl rounded-b-xl gap-1 shadow-lg">
           <LeftView setAmount={setAmount} amount={amount} />
