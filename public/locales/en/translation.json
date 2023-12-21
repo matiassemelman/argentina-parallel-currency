@@ -1,0 +1,15 @@
+{
+	"title1": "Argentina Currency Exchange",
+	"by":"Created by",
+	"rate":"Rate",
+	"left": {
+		"label": "ARS amount"
+	},
+	"currency" : {
+		"Official": "Official",
+		"Parallel": "Parallel",
+		"MEP": "MEP",
+		"Crypto": "Crypto"
+	},
+	"exchange": "Exchange :"
+}
