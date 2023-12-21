@@ -1,0 +1,15 @@
+{
+	"title1": "Conversor de Patacones(ARS) a Blue",
+	"by":"Creado por",
+	"rate":"Tasa",
+	"left": {
+		"label": "Monto en Pesos"
+	},
+	"currency" : {
+		"Official": "Oficial",
+		"Parallel": "Blue",
+		"MEP": "Bolsa",
+		"Crypto": "Cripto"
+	},
+	"exchange": "Al cambio:"
+}

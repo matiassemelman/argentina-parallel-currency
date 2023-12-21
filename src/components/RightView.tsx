@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 interface RightViewInterface {
   amount: number;
   values: object;
@@ -14,9 +16,13 @@ export const RightView = ({ amount, values }: RightViewInterface) => {
 
             return (
               <li key={name} className="flex gap-5 text-white">
-                <div className="w-20 self-center">{name}</div>
-                <div className="text-values">Rate: {venta.toFixed(2)}</div>
-                <div>Exchange: $ {exchange}</div>
+                <div className="w-20 self-center">{t("currency." + name)}</div>
+                <div className="text-values">
+                  {t("rate")}: {venta.toFixed(2)}
+                </div>
+                <div>
+                  {t("exchange")} $ {exchange}
+                </div>
               </li>
             );
           })}
