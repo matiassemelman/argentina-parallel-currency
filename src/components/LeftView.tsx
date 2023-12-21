@@ -26,6 +26,7 @@ export const LeftView: React.FC<Props> = ({ setAmount, amount }) => {
           type="number"
           id="pesosInput"
           min={0}
+          max={99999999}
           name="pesosInput"
           autoFocus
           placeholder="0"
