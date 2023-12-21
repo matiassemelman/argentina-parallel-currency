@@ -15,11 +15,17 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="bg-white md:flex rounded-t-xl rounded-b-xl gap-1 shadow-lg">
-        <LeftView setAmount={setAmount} amount={amount} />
-        <RightView amount={amount} values={values} />
+    <div className="min-h-screen">
+      <h2 className="text-center py-20 text-2xl">
+        Argentina Currency Exchange
+      </h2>
+      <div className=" flex justify-center items-center">
+        <div className="bg-white md:flex rounded-t-xl rounded-b-xl gap-1 shadow-lg">
+          <LeftView setAmount={setAmount} amount={amount} />
+          <RightView amount={amount} values={values} />
+        </div>
       </div>
+      <h1 className="text-center pt-10 md:pt-20 text-xl">By Matias Semelman</h1>
     </div>
   );
 }
