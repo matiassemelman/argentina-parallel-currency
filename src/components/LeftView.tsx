@@ -12,7 +12,7 @@ export const LeftView: React.FC<Props> = ({ setAmount, amount }) => {
 
   return (
     <section className="p-8 md:rounded-l-xl rounded-t-xl bg-white">
-      <div>
+      <div className="text-center md:text-left">
         <label htmlFor="pesosInput" className="text-textBlue font-bold">
           ARS amount
         </label>
